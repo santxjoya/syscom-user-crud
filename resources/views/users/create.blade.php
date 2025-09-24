@@ -26,7 +26,7 @@
             </div>
         @endif
 
-        <form action="{{ route('users.store') }}" method="POST">
+        <form action="{{ route('users.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-3 mt-3">
@@ -52,7 +52,10 @@
                 <label for="use_confirmation_date" class="form-label"><i class="bi bi-calendar-check"></i> Fecha de Confirmación</label>
                 <input type="date" name="use_confirmation_date" class="form-control" value="{{ old('use_confirmation_date') }}" required>
             </div>
-
+                <div class="mb-3">
+                     <label for="use_contract" class="form-label">Contrato (PDF)</label>
+                    <input type="file" name="use_contract" class="form-control" accept="application/pdf">
+                </div>
             <div class="d-flex justify-content-center mt-4">
                 <button type="submit" class="btn btn-primary px-5"><i class="bi bi-check-circle"></i> Registrar</button>
             </div>

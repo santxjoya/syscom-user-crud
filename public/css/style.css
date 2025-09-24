@@ -34,3 +34,25 @@ h2 {
     color: #4a90e2;
     font-weight: 600;
 }
+body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #f9fafb;
+        }
+        .table-container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+        }
+        table thead {
+            background: #0d6efd;
+            color: #fff;
+        }
+        table tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+        .btn-action {
+            border-radius: 50px;
+            padding: 0.35rem 0.75rem;
+        }
