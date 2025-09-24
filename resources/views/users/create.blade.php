@@ -12,10 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="col-md-6 card-form">
+    <div class="col-md-8">
+        <!-- Botón para Gestión de usuarios -->
+        <div class="d-flex justify-content-end mb-3">
+            <a href="{{ route('users.index') }}" class="btn btn-outline-primary">
+                <i class="bi bi-people-fill"></i> Ver Usuarios
+            </a>
+        </div>
+        <div class="card p-4 shadow-sm card-form">
         <h2 class="text-center mb-4"><i class="bi bi-person-fill-add"></i> Registro de Usuario</h2>
         <hr>
+
+
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul class="mb-0">
